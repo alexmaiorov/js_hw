@@ -1,15 +1,15 @@
 //Задание 1
-var arr = [],
-    num = 2;
-while ( num <= 100) {
-    if (isSimple(num)) arr.push(num);
-    num++;
-}
-console.log('Задание 1\n' + arr);
+console.log('Задание 1');
+console.log(conversion(+prompt('Введите число в диапазоне 0..999')));
 
-function isSimple(number){
-    for(let i = 2; i <= number/2; i++){
-        if (number % i ===0) return (false); 
+function conversion(num){
+    let obj = {};
+    if (isNaN(num) || num < 0 || num > 999){
+        console.log('Error. Введите число в диапазоне [0..999]');
+    } else {
+        obj['единицы'] = num % 10;
+        obj['десятки'] = ((num - obj['единицы']) % 100) / 10;
+        obj['сотни'] = Math.floor(num/100);
     }
-    return (true);
+    return obj;
 }
