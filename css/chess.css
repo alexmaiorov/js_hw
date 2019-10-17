@@ -1,0 +1,21 @@
+.chess-btn{
+    display: block;
+    margin: 5% auto;
+    min-height: 50px;
+}
+.chess{
+    width: 800px;
+    min-height: 800px;
+    margin: 0 auto;
+}
+.cell{
+    width: 100px;
+    min-height: 100px;
+    float: left;
+}
+.white{
+    background: #fff;
+}
+.black{
+    background: #000;
+}

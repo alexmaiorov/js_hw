@@ -1,0 +1,43 @@
+.gallery{
+    width: 970px;
+    margin: 0 auto;
+}
+.wrapper{
+    position: relative;
+}
+.nav-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.nav-btn svg{
+    fill: #000;
+}
+.nav-btn:hover svg{
+    fill: #c7b299;
+}
+.nav-left{
+    position: absolute;
+    top:50%;
+    left:18%;
+}
+.nav-right{
+    position: absolute;
+    top:50%;
+    right:18%;
+}
+.main{
+    display: block;
+    margin: 0 auto;
+}
+.carousel{
+    margin: 2% 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.carousel-img:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
